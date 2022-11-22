@@ -140,6 +140,10 @@ import qualified Data.ByteString.Lazy.Internal as BL  -- foldlChunks
 import qualified Data.ByteString.Short.Internal as BSI
 #endif
 
+#if MIN_VERSION_filepath(1,4,100)
+import System.OsString.Internal.Types (OsString (..), PosixString (..), WindowsString (..))
+#endif
+
 #ifdef VERSION_ghc_bignum
 import GHC.Num.BigNat (BigNat (..))
 import GHC.Num.Integer (Integer (..))
