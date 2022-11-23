@@ -17,6 +17,7 @@ on:
   push:
     branches:
       - master
+      - osstring-test
   pull_request:
     branches:
       - master
